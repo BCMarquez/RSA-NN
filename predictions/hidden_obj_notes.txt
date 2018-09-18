@@ -1,0 +1,6 @@
+for training I set the nodes to 50 in the first layer and 25 in the
+second. The amount of training iterations was set to 130.
+the regularization was set to .00001
+
+for dev I decreased the regularization from .00001 to .000001, increased the
+training iterations to 150, and added 5 more nodes in the second hidden layer

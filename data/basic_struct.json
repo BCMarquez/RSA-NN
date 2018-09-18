@@ -1,0 +1,35 @@
+{
+    "utters":[],
+    "envs_data":
+	[
+
+	    {
+		"hidden": 0,
+		"env": [
+		    {"color": "blue", "shape": "square", "string": "blue square"},
+		    {"color": "blue", "shape": "circle", "string": "blue circle"},
+		    {"color": "green", "shape": "square", "string": "green square"}
+		],
+		"utter_output" : {
+		    "blue" : {
+			"target":[],
+			"prediction":[]
+		    },
+		    "green": {
+			"target":[],
+			"prediction":[]
+		    },
+		    "square":{
+			"target":[],
+			"prediction":[]
+		    },
+		    "circle":{
+			"target":[],
+			"prediction":[]
+		    }
+		}	
+	    
+	    }
+
+	]
+}
