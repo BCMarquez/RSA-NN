@@ -74,27 +74,31 @@ class Gen_data():
         zipped_objs = [(obj,prob) for obj,prob in zip(env_objs, target)]
         permed_objs = self.permutate(zipped_objs)
         for inst in permed_objs:
-            objs, env_vec, y = self.gen_env_vec(utter, inst)
+            objs, vec, y = self.gen_vec(utter, inst)
             env_data["env"] = objs
-            env_data["x"] = [env_vec]
-            env_data["y"] = [y]
+            env_data["x"] = [vec]
+            env_data["y"] = [y] # why are these in lists? is this hard-coding batch size of 1?
             yield env_data
 
-
-    def gen_env_vec(self, utter, zipped_objs): #returns a one-hot vector representing the environment along with the corresponding labels. 
+    def gen_env_vec(self, zipped_objs):
         objects = []
-        env_vec = self.build_one_hot_utter(utter)
         label = []
-
+        vector = np.array([])
+        
         for obj, prob in zipped_objs:
             objects.append(obj)
             label.append(prob)
-
+            
             one_hot_color = self.build_one_hot_color(obj["color"])
             one_hot_shape = self.build_one_hot_shape(obj["shape"])
-            env_vec = np.concatenate((env_vec,one_hot_color,one_hot_shape),axis=0)
-        return objects, env_vec.tolist(), label
-
+            vector = np.concatenate((vector, one_hot_color, one_hot_shape), axis=0)
+            
+        return objects, vector, label
+           
+    def gen_vec(self, utter, zipped_objs): 
+        utter_vec = self.build_one_hot_utter(utter)
+        objects, env_vec, label = self.gen_env_vec(zipped_objs)
+        return objects, np.concatenate((utter_vec, env_vec), axis=0), label
         
 if __name__ == "__main__":
     gener = Gen_data("data.json")
@@ -114,3 +118,4 @@ if __name__ == "__main__":
 
 
 #where you left off. Now you're going to store the one hot envs inside the data struct. Most likely you will put in the whole permutation in there.
+
