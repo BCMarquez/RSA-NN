@@ -1,4 +1,6 @@
 import sys
+from collections import defaultdict
+import itertools
 
 import torch
 import torch.nn as nn
@@ -11,6 +13,8 @@ import torchtext.vocab
 
 import data.gen_one_hot
 
+NUM_EPOCHS = 30
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 train_data = "data//train.json"
@@ -20,8 +24,6 @@ all_data = "data//final_data.json"
 
 # We will generate our own one-hot embeddings and throw out the ones that are already in the .json files, if there are any
 g = data.gen_one_hot.Gen_data(all_data)
-vocab_size = len(g.vocab)
-
 
 # all the one-hot embedding etc. has to be handled here, rather in data generation,
 # because we have to know which word indice go to which real words in order to do the embedding.
@@ -88,7 +90,7 @@ def read_data_line(line, embedding=None):
     target = env_data["target"]
     env_objs = env_data["env"]
     utter = env_data["utter"]
-    zipped_objs = list(zip(env_objs, target))
+    zipped_objs = list(zip(env_objs, target)) # Are there biases in ordering that the network might be picking up on?
     _, env_vec, _ = g.gen_env_vec(zipped_objs)
     if embedding:
         utterance_vec = embedding.vectors[embedding.stoi[utter]]
@@ -97,11 +99,33 @@ def read_data_line(line, embedding=None):
     env_data['x'] = [np.concatenate((utterance_vec, env_vec), axis=0).tolist()]
     return env_data
 
-def print_evaluation(model, embedding, data_filename, preds_filename, name):
+def classify(env_data):
+    utterance = env_data['utter']
+    obj1 = env_data['env'][0]
+    obj2 = env_data['env'][1]
+    obj3 = env_data['env'][2]
+    properties = ['shape', 'color']
+    if utterance == obj1['shape'] == obj2['shape'] == obj3['shape']:
+        return "3-ambiguous"
+    elif utterance == obj1['color'] == obj2['color'] == obj3['color']:
+        return "3-ambiguous"
+    for prop, otherprop in itertools.permutations(properties):
+        for obj1, obj2, obj3 in itertools.permutations([obj1, obj2, obj3]):
+            if utterance == obj1[prop] == obj2[prop]:
+                if obj1[otherprop] == obj3[otherprop] or obj2[otherprop] == obj3[otherprop]:
+                    return "2-pragmatic"
+                else:
+                    return "2-ambiguous"
+    return "unclassified"
+
+def print_evaluation(model, embedding, data_filename, preds_filename, name, show_failure_cases=False):
     count = 0
     aggregated_acc = 0
     aggregated_MSE = 0
     aggregated_CE = 0
+
+    type_totals = defaultdict(list)
+    type_wrongs = defaultdict(list)
 
     with open(preds_filename, 'w') as out:
         for env_data in open(data_filename, 'r'):
@@ -112,9 +136,17 @@ def print_evaluation(model, embedding, data_filename, preds_filename, name):
             y = env_data["y"]
 
             aggregated_CE += cross_entropy(log_y_hat,y)
+
+            example_type = classify(env_data)
+            type_totals[example_type].append(env_data)
             
             for log_p_hat,p in zip(log_y_hat, y):
-                aggregated_acc += accuracy(log_p_hat, p)
+                accurate = accuracy(log_p_hat, p)
+                if not accurate:
+                    type_wrongs[example_type].append(env_data)
+                    if show_failure_cases:
+                        print(env_data['utter'], env_data['env'], env_data['y'], np.exp(log_y_hat))
+                aggregated_acc += accurate
                 aggregated_MSE += metrics.mean_squared_error(np.exp(log_p_hat), p)
                 count += 1
             env_data["y_hat"] = np.exp(log_y_hat).tolist()
@@ -129,9 +161,10 @@ def print_evaluation(model, embedding, data_filename, preds_filename, name):
     print(name, "avg acc: ", avg_acc)
     print(name, "avg mse", avg_MSE)
     print(name, "avg ce", avg_CE)
-        
 
-#------------ Training Data Metrics ----------------------
+    for example_type in type_totals:
+        print(name, "failures on example type %s:" % example_type, len(type_wrongs[example_type]), "/", len(type_totals[example_type]))
+        
 
 def main(embedding=None):
     if embedding == 'glove':
@@ -158,11 +191,11 @@ def main(embedding=None):
 
     with open(train_data, 'r') as train_data_file:
         training_data = [read_data_line(line, embedding) for line in train_data_file]
-    train(model, optimizer, loss_fn, training_data, num_epochs=30)
+    train(model, optimizer, loss_fn, training_data, num_epochs=NUM_EPOCHS)
     
         
-    print_evaluation(model, embedding, train_data, "train_preds.json", "training")
-    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev")    
+    print_evaluation(model, embedding, train_data, "train_preds.json", "training", show_failure_cases=False)
+    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev", show_failure_cases=False)    
 
 
 if __name__ == '__main__':
