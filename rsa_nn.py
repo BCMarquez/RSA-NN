@@ -13,7 +13,7 @@ import torchtext.vocab
 
 import data.gen_one_hot
 
-NUM_EPOCHS = 30
+NUM_EPOCHS = 500
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -104,11 +104,10 @@ def classify(env_data):
     obj1 = env_data['env'][0]
     obj2 = env_data['env'][1]
     obj3 = env_data['env'][2]
-    properties = ['shape', 'color']
-    if utterance == obj1['shape'] == obj2['shape'] == obj3['shape']:
-        return "3-ambiguous"
-    elif utterance == obj1['color'] == obj2['color'] == obj3['color']:
-        return "3-ambiguous"
+    properties = list(obj1.keys())
+    for prop in properties:
+        if utterance == obj1[prop] == obj2[prop] == obj3[prop]:
+            return "3-ambiguous"
     for prop, otherprop in itertools.permutations(properties):
         for obj1, obj2, obj3 in itertools.permutations([obj1, obj2, obj3]):
             if utterance == obj1[prop] == obj2[prop]:
