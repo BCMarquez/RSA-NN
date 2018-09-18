@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import time
-#from softmax import softmax
 from sklearn import metrics
 import numpy as np
 import json
@@ -28,6 +27,7 @@ class Neural_Net(nn.Module):
         self.l2 = nn.Linear(70,35, bias = True)
         self.l2_act = nn.Tanh()
         self.l3 = nn.Linear(35, output_size, bias = True)
+        self.log_softmax = nn.LogSoftmax()
 
     def forward(self, x):
         out = self.l1(x)
@@ -35,6 +35,7 @@ class Neural_Net(nn.Module):
         out = self.l2(out)
         out = self.l2_act(out)
         out = self.l3(out)
+        out = self.log_softmax(out)
         return out
 
 model = Neural_Net(input_size, output_size).to(device)
@@ -46,9 +47,8 @@ for name, param in model.named_parameters():
 
 
 #------------------ Loss & Optimizer --------------------
-def cross_entropy_loss(pred, soft_targets):
-    logsoftmax = torch.nn.LogSoftmax(len(pred))
-    return torch.mean(torch.sum(- soft_targets * logsoftmax(pred), 1))
+def cross_entropy_loss(logp_hats, ps):
+    return torch.mean(torch.sum(- ps * logp_hats, 1))
 
 loss_fn = cross_entropy_loss #this can be switched with torch.nn.MSELoss
 
@@ -62,10 +62,10 @@ for epoch in range(30):
         x = Variable(torch.Tensor(env_data["x"]))
         y = Variable(torch.Tensor(env_data["y"]))
 
-        y_pred = model(x)
+        log_y_pred = model(x)
 
         optimizer.zero_grad()
-        loss = loss_fn(y_pred, y)
+        loss = loss_fn(log_y_pred, y)
         print(epoch, loss.item(), end='\r')
 
 
@@ -75,12 +75,11 @@ for epoch in range(30):
     time.sleep(1)
 
 #-------------- Metrics ---------------------
-def cross_entropy(pred, targets):
-    pred = Variable(torch.Tensor(pred))
+def cross_entropy(log_pred, targets):
+    log_pred = Variable(torch.Tensor(log_pred))
     targets = Variable(torch.Tensor(targets))
 
-    logsoftmax = torch.nn.LogSoftmax(1)
-    result = sum(torch.sum(- targets * logsoftmax(pred), 1).data.numpy()) #I should as Professor Singh for help here as torch.sum is returning an array over the 6 instances. Does summing those before returning them make sense? And does it make sense to take the average once all those instances have been collected (as shown in line 86). Right now it doesn't make sense because cross entropy is really high compared to mse
+    result = sum(torch.sum(-targets * log_pred, 1).data.numpy()) #I should as Professor Singh for help here as torch.sum is returning an array over the 6 instances. Does summing those before returning them make sense? And does it make sense to take the average once all those instances have been collected (as shown in line 86). Right now it doesn't make sense because cross entropy is really high compared to mse
     return result
 
 def accuracy(pred, targets):
@@ -98,16 +97,16 @@ with open('train_preds.json','a') as out:
         env_data = eval(env_data)
         x = Variable(torch.Tensor(env_data["x"]))
       
-        y_hat = model(x).data.numpy()
+        log_y_hat = model(x).data.numpy()
         y = env_data["y"]
 
-        aggregated_CE += cross_entropy(y_hat,y)
+        aggregated_CE += cross_entropy(log_y_hat,y)
 
-        for p,l in zip(y_hat, y):
-            aggregated_acc += accuracy(p,l)
-            aggregated_MSE += metrics.mean_squared_error(l,p)
+        for log_p_hat,p in zip(log_y_hat, y):
+            aggregated_acc += accuracy(log_p_hat, p)
+            aggregated_MSE += metrics.mean_squared_error(np.exp(log_p_hat), p)
             count += 1
-        env_data["y_hat"] = y_hat.tolist()
+        env_data["y_hat"] = np.exp(log_y_hat).tolist()
         json.dump(env_data,out)
         out.write('\n')
 
@@ -132,16 +131,16 @@ with open('dev_preds.json', 'a') as out:
         x = Variable(torch.Tensor(env_data["x"]))
       
 
-        y_hat = model(x).data.numpy()
+        log_y_hat = model(x).data.numpy()
         y = env_data["y"]
 
-        aggregated_CE += cross_entropy(y_hat,y)
+        aggregated_CE += cross_entropy(log_y_hat,y)
 
-        for p,l in zip(y_hat, y):
-            aggregated_acc += accuracy(p,l)
-            aggregated_MSE += metrics.mean_squared_error(l,p)
+        for log_p_hat,p in zip(log_y_hat, y):
+            aggregated_acc += accuracy(log_p_hat, p)
+            aggregated_MSE += metrics.mean_squared_error(np.exp(log_p_hat), p)
             count += 1
-        env_data["y_hat"] = y_hat.tolist()
+        env_data["y_hat"] = np.exp(log_y_hat).tolist()
         json.dump(env_data,out)
         out.write('\n')
 
@@ -149,9 +148,9 @@ avg_acc = aggregated_acc/count
 avg_MSE = aggregated_MSE/count
 avg_CE = aggregated_CE/count
         
-print("training avg acc: ", avg_acc)
-print("training avg mse", avg_MSE)
-print("training avg ce", avg_CE)
+print("dev avg acc: ", avg_acc)
+print("dev avg mse", avg_MSE)
+print("dev avg ce", avg_CE)
 
 #------------- Test Data Metrics ------------------
 #will be added once I tune my hyper parameters well.
