@@ -13,7 +13,17 @@ import torchtext.vocab
 
 import data.gen_one_hot
 
-NUM_EPOCHS = 500
+NUM_EPOCHS = 50
+
+SYNONYMS = {
+    'square': 'cube',
+    'circle': 'sphere',
+    'triangle': 'pyramid',
+    'green': 'teal',
+    'blue': 'indigo',
+    'red': 'scarlet',
+    'purple': 'violet',
+}
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -84,12 +94,14 @@ def accuracy(pred, targets):
 
 # Embedding logic
 
-def read_data_line(line, embedding=None):
+def read_data_line(line, embedding=None, use_synonyms=False):
     env_data = eval(line)
     # Construct x out of its parts; throw away any existing x field
     target = env_data["target"]
     env_objs = env_data["env"]
     utter = env_data["utter"]
+    if use_synonyms:
+        utter = SYNONYMS[utter]
     zipped_objs = list(zip(env_objs, target)) # Are there biases in ordering that the network might be picking up on?
     _, env_vec, _ = g.gen_env_vec(zipped_objs)
     if embedding:
@@ -117,7 +129,7 @@ def classify(env_data):
                     return "2-ambiguous"
     return "unclassified"
 
-def print_evaluation(model, embedding, data_filename, preds_filename, name, show_failure_cases=False):
+def print_evaluation(model, embedding, data_filename, preds_filename, name, show_failure_cases=False, use_synonyms=False):
     count = 0
     aggregated_acc = 0
     aggregated_MSE = 0
@@ -128,13 +140,13 @@ def print_evaluation(model, embedding, data_filename, preds_filename, name, show
 
     with open(preds_filename, 'w') as out:
         for env_data in open(data_filename, 'r'):
-            env_data = read_data_line(env_data, embedding)
+            env_data = read_data_line(env_data, embedding, use_synonyms=use_synonyms)
             x = Variable(torch.Tensor(env_data["x"]))
       
             log_y_hat = model(x).data.numpy()
             y = env_data["y"]
 
-            aggregated_CE += cross_entropy(log_y_hat,y)
+            aggregated_CE += cross_entropy(log_y_hat, y)
 
             example_type = classify(env_data)
             type_totals[example_type].append(env_data)
@@ -179,9 +191,14 @@ def main(embedding=None):
     
     model = Neural_Net(input_size, output_size).to(device)
 
+    print()
+    print("Baseline:")
+    print_evaluation(model, embedding, train_data, "train_preds.json", "training", show_failure_cases=False)
+    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev", show_failure_cases=False)    
+
     for name, param in model.named_parameters():
         if param.requires_grad:
-            print("name: %s, param_data: %s"% (name, param.data))
+            print("name: %s, param_data: %s"% (name, param.data), file=sys.stderr)
 
     loss_fn = cross_entropy_loss #this can be switched with torch.nn.MSELoss
 
@@ -192,9 +209,14 @@ def main(embedding=None):
         training_data = [read_data_line(line, embedding) for line in train_data_file]
     train(model, optimizer, loss_fn, training_data, num_epochs=NUM_EPOCHS)
     
-        
+
+    print("\n\nOn true wordforms:")
     print_evaluation(model, embedding, train_data, "train_preds.json", "training", show_failure_cases=False)
-    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev", show_failure_cases=False)    
+    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev", show_failure_cases=False)
+
+    print("\nWith synonyms:")
+    print_evaluation(model, embedding, train_data, "train_preds.json", "training", show_failure_cases=False, use_synonyms=True)
+    print_evaluation(model, embedding, dev_data, "dev_preds.json", "dev", show_failure_cases=False, use_synonyms=True)    
 
 
 if __name__ == '__main__':
