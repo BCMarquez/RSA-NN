@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import math
+import json
+
 
 states = [ "terrible", "bad", "neutral", "good", "amazing"]
 utterances = [ "terrible", "bad", "neutral", "good", "amazing"]
@@ -7,65 +9,13 @@ quds = [ "state", "valence", "arousal"]
 valences = ["positive", "negative"]
 arousals = ["high", "low"]
 affects = [(v, a) for v in valences for a in arousals]
-contexts = ["WC1", "WC6", "WC9"]
+contexts = ["WC1", "WC2","WC3","WC4","WC5","WC6","WC7","WC8","WC9"]
 
 # For each context, prior over the states
-prior_states = {
-    "WC1" : {
-        "terrible": 0.015,
-        "bad":      0.02,
-        "neutral":  0.03,
-        "good":     0.035,
-        "amazing":  0.9
-    },
-    "WC6" : {
-        "terrible": 0.05,
-        "bad":      0.14,
-        "neutral":  0.5,
-        "good":     0.26,
-        "amazing":  0.05
-    },
-    "WC9" : {
-        "terrible": 0.55,
-        "bad":      0.3,
-        "neutral":  0.07,
-        "good":     0.05,
-        "amazing":  0.03
-    }
-}
+prior_states = eval(open('irony/prior_states.json', 'r').read())
+print("prior states: ", prior_states)
 # For each state, prior over valence+arousal combination
-prior_affect = {
-    "terrible": {
-        ("positive", "high"): 0.05,
-        ("negative", "high"): 0.7,
-        ("positive", "low"):  0.05,
-        ("negative", "low"):  0.2,
-    },
-    "bad": {
-        ("positive", "high"): 0.05,
-        ("negative", "high"): 0.5,
-        ("positive", "low"):  0.05,
-        ("negative", "low"):  0.4,
-    },
-    "neutral": {
-        ("positive", "high"): 0.05,
-        ("negative", "high"): 0.05,
-        ("positive", "low"):  0.45,
-        ("negative", "low"):  0.45,
-    },
-    "good": {
-        ("positive", "high"): 0.4,
-        ("negative", "high"): 0.05,
-        ("positive", "low"):  0.5,
-        ("negative", "low"):  0.05,
-    },
-    "amazing": {
-        ("positive", "high"): 0.7,
-        ("negative", "high"): 0.05,
-        ("positive", "low"):  0.2,
-        ("negative", "low"):  0.05,
-    },
-}
+prior_affect = eval(open('irony/prior_affect.json', 'r').read())
 
 # Prior over QUDs
 # hmmm was this ever calculated in the paper?
