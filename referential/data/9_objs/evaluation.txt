@@ -1,0 +1,1543 @@
+#------------Unseen Environment ---------------
+avg acc: 0.9259259259259259
+avg acc: 0.2598505903173376
+failures on example type 3-ambiguous: 3/3
+failures on example type 2-pragmatic: 0/20
+failures on example type unclassified: 0/52
+failures on example type 2-ambiguous: 3/6
+#------------------------------------#
+avg acc: 0.8571428571428571
+avg acc: 0.3757316235985075
+failures on example type 3-ambiguous: 1/3
+failures on example type unclassified: 0/14
+failures on example type 2-pragmatic: 2/4
+#------------------------------------#
+avg acc: 0.875
+avg acc: 0.472446729739507
+failures on example type unclassified: 1/12
+failures on example type 2-pragmatic: 2/12
+#-------------------Random Split-----------------
+avg acc: 0.97
+avg acc: 0.29055901408195495
+failures on example type 3-ambiguous: 1/3
+failures on example type 2-ambiguous: 2/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 0/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.23516413340201744
+failures on example type 3-ambiguous: 1/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.3472528010606766
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.96
+avg acc: 0.292788969874382
+failures on example type 2-ambiguous: 1/6
+failures on example type 2-pragmatic: 1/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 2/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.23232242235770592
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.4542380387966449
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.95
+avg acc: 0.29064310491085055
+failures on example type 2-ambiguous: 3/6
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 2/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.25893837213516235
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 2/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 1.1176138474391057
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 1.1176138474391057
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.86
+avg acc: 0.30318314671516416
+failures on example type 2-ambiguous: 4/6
+failures on example type 2-pragmatic: 7/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 3/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.8411333836041964
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 2/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 1.0605579752188463
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.8931286518390362
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.96
+avg acc: 0.29169728815555573
+failures on example type 2-ambiguous: 4/6
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.24495258698096642
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.2610849371323219
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.96
+avg acc: 0.29078455686569216
+failures on example type 2-ambiguous: 3/6
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 1/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.24177350447728083
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 2/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.4094900351304274
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.4094900351304274
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.30950937362817615
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.96
+avg acc: 0.2931803439557552
+failures on example type 2-ambiguous: 3/6
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 1/3
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: 1.1328705090742845
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 2/10
+failures on example type 3-ambiguous: 2/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.9381159773239722
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.9514379317943866
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.8214726769007169
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 1/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.93
+avg acc: 0.2916667890548706
+failures on example type 2-ambiguous: 5/6
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 2/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 1.2399637974225557
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 2/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 2.0566511704371524
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 2.043326098185319
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 2.1716448802214403
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.97
+avg acc: 0.29989964425563814
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 3/32
+failures on example type 2-ambiguous: 0/6
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.48004859857834303
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 1.1898708664453947
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 1.1922146081924438
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: 1.5242954125771155
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.2907951182126999
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-pragmatic: 0/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.24700571940495417
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.29117276118351865
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.3019794409091656
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.35046555445744443
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.98
+avg acc: -inf
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-pragmatic: 2/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 2-pragmatic: 0/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: -inf
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: -inf
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: -inf
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: -inf
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: -inf
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.9
+avg acc: 0.32762563298145936
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 2-pragmatic: 10/32
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.2672875884251717
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.37571545732327
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.370569009352953
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.5073646982510884
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.99
+avg acc: inf
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-pragmatic: 1/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: inf
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+failures on example type 2-pragmatic: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: inf
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: inf
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: inf
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.93
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 2-pragmatic: 7/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [inf]
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [inf]
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 2/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 3/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 3/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.86
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 1/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 2-pragmatic: 13/32
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [nan nan nan]
+failures on example type unclassified: 2/10
+failures on example type 2-pragmatic: 0/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.92
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 2-pragmatic: 8/32
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [nan nan nan]
+failures on example type unclassified: 3/10
+failures on example type 2-pragmatic: 1/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [nan nan nan]
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 2/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.94
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 6/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.9
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 10/32
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 2/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [nan nan nan]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.87
+avg acc: [0.11958411]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 13/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.39292847]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.72874512]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.71612583]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.81893263]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.92
+avg acc: [0.05923482]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 8/32
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.41012135]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.5384615384615384
+avg acc: [1.12688554]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 4/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.5384615384615384
+avg acc: [1.08608421]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 4/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.38461538461538464
+avg acc: [1.33711447]
+failures on example type 2-pragmatic: 3/3
+failures on example type unclassified: 5/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.99
+avg acc: [0.00426439]
+failures on example type 2-pragmatic: 1/32
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.05515366]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.15004271]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.15550445]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.07328994]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.00190891]
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.15283817]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.1748662]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.18498106]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.31115679]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.00270959]
+failures on example type 2-pragmatic: 0/32
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.24558367]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.59748472]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.63056518]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.57651637]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.99
+avg acc: [0.00345025]
+failures on example type 2-pragmatic: 1/32
+failures on example type unclassified: 0/59
+failures on example type 2-ambiguous: 0/6
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.18353287]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.07415136]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.06790632]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.04903675]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.94
+avg acc: [7.01554229]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 6/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [6.08616855]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [4.71280215]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [4.63566116]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [4.21561743]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.95
+avg acc: [7.13920228]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 5/32
+#------------------------------------#
+avg acc: 1.0
+avg acc: [5.64073456]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [4.12359157]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [4.12532771]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [4.29224776]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: inf
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 0/32
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: inf
+failures on example type unclassified: 1/10
+failures on example type 2-pragmatic: 0/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 1.0
+avg acc: inf
+failures on example type unclassified: 0/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: inf
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: inf
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 1/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.99
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 1/32
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 3/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.93
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 7/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 0/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 1/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.91
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 9/32
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 2/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [nan nan nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.88
+avg acc: [nan]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 12/32
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [nan]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 2/10
+failures on example type 2-pragmatic: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [nan]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.89
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 2-pragmatic: 11/32
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/2
+failures on example type unclassified: 4/10
+failures on example type 2-pragmatic: 1/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 2/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [inf]
+failures on example type 3-ambiguous: 0/1
+failures on example type unclassified: 3/9
+failures on example type 2-pragmatic: 2/3
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.89
+avg acc: [inf]
+failures on example type 2-pragmatic: 11/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [inf]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [inf]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.85
+avg acc: [0.05897819]
+failures on example type 2-pragmatic: 15/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.33767454]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.37912905]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.39631776]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.47552475]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.95
+avg acc: [0.01022246]
+failures on example type 2-pragmatic: 5/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.11016843]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.10235099]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.10143853]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.09442458]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.00139023]
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+failures on example type 2-pragmatic: 0/32
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.0064536]
+failures on example type unclassified: 0/10
+failures on example type 2-pragmatic: 1/1
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.1379624]
+failures on example type unclassified: 1/9
+failures on example type 2-pragmatic: 0/3
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.89
+avg acc: [0.05130254]
+failures on example type 2-pragmatic: 11/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [0.66183102]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 4/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.51830544]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.94
+avg acc: [0.02630885]
+failures on example type 2-pragmatic: 6/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.34446267]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: [1.34491348]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.88
+avg acc: [0.0545433]
+failures on example type 2-pragmatic: 12/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.39617828]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 1/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [1.05884917]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [1.19028013]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.89
+avg acc: [0.05558497]
+failures on example type 2-pragmatic: 11/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.35985844]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.38823205]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: [0.46856449]
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.97
+avg acc: [0.01027226]
+failures on example type 2-pragmatic: 3/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: [0.02256629]
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.60930969]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: [0.51536966]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.98
+avg acc: [0.00283087]
+failures on example type 2-pragmatic: 2/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.01537687]
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 1.0
+avg acc: [0.04383763]
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: [0.31014758]
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.9
+avg acc: 0.35658452750347586
+failures on example type 2-pragmatic: 10/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.5715709045893537
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 2/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: 1.106449817550273
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: 1.1685514828333488
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 4/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.9
+avg acc: 0.3526175559611099
+failures on example type 2-pragmatic: 10/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.661263358910592
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 2/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.7282931701184657
+failures on example type 2-pragmatic: 1/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.81
+avg acc: 0.48164333208417526
+failures on example type 2-pragmatic: 18/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 1/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.6153846153846154
+avg acc: 0.9382663584290406
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 3/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.93
+avg acc: 0.32387396902051757
+failures on example type 2-pragmatic: 7/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.3294163515388321
+failures on example type 2-pragmatic: 1/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.6633690941171386
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 1/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.79
+avg acc: 0.5266350059906741
+failures on example type 2-pragmatic: 12/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 9/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: 0.6505724903339378
+failures on example type 2-pragmatic: 2/3
+failures on example type unclassified: 2/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.91
+avg acc: 0.3562902968105239
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.6185293071195841
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.6715812364443897
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.9
+avg acc: 0.4670659874298922
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.9204112367943312
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 1.0
+avg acc: 0.29198037112338754
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.3290968166139185
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.9230769230769231
+avg acc: 0.5689055130610168
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.93
+avg acc: 0.4148131326642812
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.6923076923076923
+avg acc: 0.8568303435446862
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#
+avg acc: 0.89
+avg acc: 0.34259342703105233
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.7692307692307693
+avg acc: 0.578493790815656
+failures on example type 2-pragmatic: 0/1
+failures on example type unclassified: 0/10
+failures on example type 3-ambiguous: 0/2
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 1.00236349105029
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+avg acc: 0.84
+avg acc: 0.6029769544423694
+failures on example type 2-pragmatic: 0/32
+failures on example type 2-ambiguous: 0/6
+failures on example type unclassified: 0/59
+failures on example type 3-ambiguous: 0/3
+#------------------------------------#
+avg acc: 0.8461538461538461
+avg acc: 0.9672465435676993
+failures on example type 2-pragmatic: 0/3
+failures on example type unclassified: 0/9
+failures on example type 3-ambiguous: 0/1
+#------------------------------------#
+#------------------------------------#

@@ -1,0 +1,16 @@
+{"id": 0, "utter": "blue", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "circle", "color": "green"}], "target": [0.4000000000000001, 0.6, 0]}
+{"id": 0, "utter": "green", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "circle", "color": "green"}], "target": [0, 0, 1]}
+{"id": 0, "utter": "circle", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "circle", "color": "green"}], "target": [0, 0.6, 0.4000000000000001]}
+{"id": 0, "utter": "square", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "circle", "color": "green"}], "target": [1, 0, 0]}
+{"id": 1, "utter": "blue", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}], "target": [0.6, 0.4000000000000001, 0]}
+{"id": 1, "utter": "green", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}], "target": [0, 0, 1]}
+{"id": 1, "utter": "circle", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}], "target": [0, 1, 0]}
+{"id": 1, "utter": "square", "env": [{"shape": "square", "color": "blue"}, {"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}], "target": [0.6, 0, 0.4000000000000001]}
+{"id": 2, "utter": "blue", "env": [{"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [1, 0, 0]}
+{"id": 2, "utter": "green", "env": [{"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0, 0.4000000000000001, 0.6]}
+{"id": 2, "utter": "circle", "env": [{"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0.4000000000000001, 0, 0.6]}
+{"id": 2, "utter": "square", "env": [{"shape": "circle", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0, 1, 0]}
+{"id": 3, "utter": "blue", "env": [{"shape": "square", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [1, 0, 0]}
+{"id": 3, "utter": "green", "env": [{"shape": "square", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0, 0.6, 0.4000000000000001]}
+{"id": 3, "utter": "circle", "env": [{"shape": "square", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0, 0, 1]}
+{"id": 3, "utter": "square", "env": [{"shape": "square", "color": "blue"}, {"shape": "square", "color": "green"}, {"shape": "circle", "color": "green"}], "target": [0.4000000000000001, 0.6, 0]}
